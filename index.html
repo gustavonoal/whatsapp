@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div id="app">
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <div class="menu-icon">&#9776;</div>
+                <h1>WhatsApp</h1>
+                <div class="header-icons">
+                    <button class="icon-btn" title="Novo chat">+</button>
+                    <button class="icon-btn" title="Menu">⋮</button>
+                </div>
+            </header>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar ou começar uma nova conversa" />
+            </div>
+            <nav class="chat-filters">
+                <button class="filter active">Tudo</button>
+                <button class="filter">Não lidas</button>
+                <button class="filter">Favoritas</button>
+                <button class="filter">Grupos</button>
+            </nav>
+            <ul class="chat-list">
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=31" alt="Mariana Costa" />
+                    <div class="chat-info">
+                        <div class="chat-name">Mariana Costa</div>
+                        <div class="chat-last-message">🎉 Festa hoje à noite</div>
+                    </div>
+                    <div class="chat-time">09:15</div>
+                </li>
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=32" alt="Equipe Marketing" />
+                    <div class="chat-info">
+                        <div class="chat-name">Equipe Marketing</div>
+                        <div class="chat-last-message">Campanha aprovada</div>
+                    </div>
+                    <div class="chat-time">Ontem</div>
+                </li>
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=33" alt="Clube de Corrida" />
+                    <div class="chat-info">
+                        <div class="chat-name">Clube de Corrida</div>
+                        <div class="chat-last-message">Treino sábado 7h</div>
+                    </div>
+                    <div class="chat-time">sábado</div>
+                </li>
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=34" alt="Mãe" />
+                    <div class="chat-info">
+                        <div class="chat-name">Mãe</div>
+                        <div class="chat-last-message">✓✓ Tudo certo</div>
+                    </div>
+                    <div class="chat-time">sábado</div>
+                </li>
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=35" alt="Irmã" />
+                    <div class="chat-info">
+                        <div class="chat-name">Irmã</div>
+                        <div class="chat-last-message">Foto do almoço</div>
+                    </div>
+                    <div class="chat-time">sexta-feira</div>
+                </li>
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=36" alt="Turma 203" />
+                    <div class="chat-info">
+                        <div class="chat-name">Turma 203</div>
+                        <div class="chat-last-message">Entrega do projeto</div>
+                    </div>
+                    <div class="chat-time">sexta-feira</div>
+                </li>
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=37" alt="Projeto Y" />
+                    <div class="chat-info">
+                        <div class="chat-name">Projeto Y</div>
+                        <div class="chat-last-message">Reunião amanhã</div>
+                    </div>
+                    <div class="chat-time">quinta-feira</div>
+                </li>
+                <li class="chat-item active">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=12" alt="Felipe" />
+                    <div class="chat-info">
+                        <div class="chat-name">Felipe</div>
+                        <div class="chat-last-message voice-message">🟢 0:04</div>
+                    </div>
+                    <div class="chat-time">quarta-feira</div>
+                </li>
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=39" alt="Julia" />
+                    <div class="chat-info">
+                        <div class="chat-name">Julia</div>
+                        <div class="chat-last-message">✓✓ Tudo bem</div>
+                    </div>
+                    <div class="chat-time">quarta-feira</div>
+                </li>
+                <li class="chat-item">
+                    <img class="avatar" src="https://i.pravatar.cc/40?img=40" alt="Equipe Dev" />
+                    <div class="chat-info">
+                        <div class="chat-name">Equipe Dev</div>
+                    </div>
+                    <div class="chat-time">terça-feira</div>
+                </li>
+            </ul>
+            <footer class="sidebar-footer">
+                <button class="download-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
+                    Baixar o WhatsApp para Windows
+                </button>
+            </footer>
+        </aside>
+        <main class="chat-area">
+            <header class="chat-header">
+                <img class="chat-avatar" src="https://i.pravatar.cc/40?img=12" alt="Felipe" />
+                <div class="chat-header-info">
+                    <h2>Felipe</h2>
+                    <p>visto por último hoje às 14:15</p>
+                </div>
+                <div class="chat-header-icons">
+                    <button class="icon-btn" title="Video call">&#128249;</button>
+                    <button class="icon-btn" title="Menu">&#9660;</button>
+                    <button class="icon-btn" title="Search">&#128269;</button>
+                </div>
+            </header>
+            <section class="chat-messages">
+                <div class="load-more">Clique neste aviso para carregar mensagens mais antigas do seu celular.</div>
+                <div class="date-separator">13/08/2025</div>
+                <div class="message received">
+                    <p>Estamos aqui</p>
+                    <time>18:14</time>
+                </div>
+                <div class="message received">
+                    <p>No estacionamento da rua</p>
+                    <time>18:14</time>
+                </div>
+                <div class="date-separator">30/08/2025</div>
+                <div class="message sent emoji-only">
+                    <p>🙂</p>
+                    <time>21:01</time>
+                </div>
+                <div class="message sent">
+                    <p>Já chegando no Calabria</p>
+                    <time>18:06</time>
+                </div>
+                <div class="message sent">
+                    <p>Tá o ônibus tá entrando na rua agora</p>
+                    <time>18:16</time>
+                </div>
+                <div class="date-separator">08/09/2025</div>
+                <div class="message received">
+                    <p>Oi filho</p>
+                    <time>16:51</time>
+                </div>
+                <div class="message received">
+                    <p>Vou te pegar aí na frente do colégio</p>
+                    <time>16:51</time>
+                </div>
+                <div class="message received">
+                    <p>Ok</p>
+                    <time>16:59</time>
+                </div>
+                <div class="message received">
+                    <p>Quando chegar te ligo</p>
+                    <time>17:00</time>
+                </div>
+                <div class="message sent">
+                    <p>Ta</p>
+                    <time>16:52</time>
+                </div>
+                <div class="message voice-message sent">
+                    <div class="voice-player">
+                        <button class="play-btn">&#9658;</button>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <time>0:04</time>
+                        <time class="duration">17:10</time>
+                    </div>
+                    <img class="voice-avatar" src="https://i.pravatar.cc/40?img=12" alt="Pai" />
+                </div>
+            </section>
+            <footer class="chat-footer">
+                <button class="icon-btn emoji-btn">&#128515;</button>
+                <input type="text" placeholder="Digite uma mensagem" />
+                <button class="icon-btn mic-btn">&#127908;</button>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
